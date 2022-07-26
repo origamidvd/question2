@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+     <?!=HtmlService.createHtmlOutputFromFile('css.html').getContent(); ?>
+     <meta name="viewport"
+     content="width=320,
+        height=480,
+        initial-scale=1.0,
+        minimum-scale=1.0,
+        maximum-scale=2.0,
+        user-scalable=yes" />
+    <link rel="stylesheet" href="css.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>参加希望届</h1>
+    </header>
+    <main>
+     <form class="" action="https://script.google.com/macros/s/AKfycbxNO194_Z6xmtEWgJQmLkJZByPPYkDXik7ERZrQIIaU20l66utRvsLaIT4m8WKGhliXNA/exec" method="post">
+
+      <!-- 導入箇所 -->
+       <div class="intro">
+        <p>※最低でも練習課題曲1は入力してください </p>
+       </div>
+        <dl>
+         <div class="form-item">
+           <div class="container" required>
+             <span class="other">お名前</span><br>
+             <textarea name="name" rows="1" cols="20"></textarea>
+           </div>
+          <!-- QUESTION: 1 -->
+          <div class="">
+            <div class="other-text">
+              <span class="other">練習課題曲1</span><br>
+              <textarea name="q1n1" rows="1" cols="40"></textarea>
+            </div>
+          </div>
+            <!-- QUESTION: 2 -->
+            <div class="">
+                <div class="other-text">
+                  <span class="other">練習課題曲2</span><br>
+                  <textarea name="q1n2" rows="1" cols="40"></textarea>
+                </div> 
+              </div>
+            <!-- その他 -->
+            <div class="">
+              <div class="other-text">
+                <span class="other">練習課題曲3</span><br>
+                <textarea name="q1o" rows="1" cols="40"></textarea>
+              </div>
+            </div>
+          </div>
+        </dl>
+        <!-- 送信ボタン -->
+        <div class="form-submit">
+          <input type="submit" name="" value="送信する">
+        </div>
+     </form>
+    </main>
+  </body>
+</html>
